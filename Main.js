@@ -28,6 +28,7 @@ var height = 3;
 //function makeBoard
 
 function makeTable(y, x) {
+  console.log("making table");
   //Makes a table of y rows with x elements each.
   let table = document.createElement("table");
   for (let i = 0; i < y; i++) {
@@ -43,6 +44,7 @@ function makeTable(y, x) {
 }
 
 function makeBoard(domTable) {
+  console.log("Making board");
   let rows = Array.from(domTable.children);
 
   for (let i = 0; i < height; i++) {
@@ -113,7 +115,7 @@ function boardFull(gameState) {
 var gameBoard = [
   [" ", " ", " "],
   [" ", " ", " "],
-  [" ", " ", " "]
+  [" ", " ", " "],
 ];
 
 function runGame(tiles) {
